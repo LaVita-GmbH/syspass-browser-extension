@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(md-icons.woff2) format("woff2");
+}
+
+body {
+    --background: #e6e6e6;
+    --foreground: #fff;
+    --text: #000;
+    --primary_light: rgba(115, 126, 255, 0.67);
+    --primary: #004f90;
+    --success: #2e7d32;
+    --error: #ff0000;
+    width: 500px;
+    background-color: var(--background);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text);
+}
+
+input#timeout {
+    width: auto;
+    padding-right: 1px;
+}
+
+div#settings {
+    margin: 0 auto auto auto;
+}
+
+#pin:focus {
+    border-color: var(--foreground);
+}
+
+#save {
+    font-size: 28px;
+    padding: 8px;
+}
+
+#success_msg {
+    border: 2px solid var(--background);
+    font-size: 20px;
+}
+
+#close_error{
+    border-radius: 100%;
+    position: fixed;
+    top: 1px;
+    border: 1px solid var(--foreground);
+    right: 1px;
+    background: var(--background);
+    cursor: pointer;
+}
+
+.pin_error.floating_message {
+    top: 68%;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.floating_message.error{
+    border: 2px solid var(--error);
+}
+
+.floating_message {
+    background: var(--foreground);
+    border-radius: 11px;
+    padding: 15px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 50%;
+    text-align: center;
+    opacity: 1;
+    transition: opacity .5s;
+    position: fixed;
+}
+
+.floating_message.fadeout {
+    opacity: 0;
+}
+
+.error {
+    font-size: 17px;
+}
+
+#error {
+    margin: auto;
+}
+
+#crit_error > md-icon {
+    font-size: 60px;
+}
+
+#crit_error {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    width: fit-content;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.whitebox {
+    background: var(--foreground);
+    border: 2px solid var(--foreground);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 5px;
+    transition: 500ms;
+}
+
+.highlight:hover {
+    border-color: var(--primary_light);
+}
+
+.whitebox:focus,
+.whitebox.account:focus:hover {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.button {
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+}
+
+#search {
+    padding: 0;
+}
+
+input {
+    border: none;
+    padding: 10px 35px 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    background-color: var(--foreground);
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+md-icon {
+    user-select: none;
+}
+
+#lock_button {
+    margin-left: auto;
+    font-size: 16px;
+    background: var(--foreground);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: -5px;
+}
+
+#search_button {
+    font-size: 24px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#category_search_button {
+    font-size: 24px;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+.account {
+    display: grid;
+    grid-template-columns: 1fr 25px;
+}
+
+.account_actions > md-icon {
+    font-size: 20px;
+}
+
+.account_head {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.account_category {
+    padding: 3px 8px;
+    background: var(--background);
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 100px;
+    color: var(--text);
+    font-size: 12px;
+}
+
+.account > .account_actions > .open_description {
+    transition: all 0.25s ease-in-out;
+    margin-top: auto;
+    margin-bottom: -5px;
+}
+
+.account.opened > .account_actions > .open_description {
+    transform: rotate(180deg);
+}
+
+.account > .account_info > .account_description {
+    display: none;
+}
+
+.account.opened > .account_info > .account_description {
+    display: block;
+}
+
+.account_actions {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 5px;
+}
+
+#pin_prompt {
+    display: flex;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pin_prompt > md-icon {
+    font-size: 47px;
+}
+
+#pin {
+    text-align: center;
+    width: 50%;
+}
+
+.green_text {
+    color: var(--success);
+}
+
+.loading {
+    animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --background: #121212;
+        --foreground: #454545;
+        --text: #e6e6e6;
+        --primary: #64b5f6;
+        --primary_light: #1f5d8f;
+        --success: #66bb6a;
+    }
+}

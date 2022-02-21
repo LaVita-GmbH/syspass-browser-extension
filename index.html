@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css_material-icons.css" />
+    </head>
+    <body>
+        <div id="hidden_when_locked" hidden>
+            <div class="whitebox" id="search">
+                <input type="text" id="searchbar" />
+                <md-icon class="pointer" id="category_search_button">view_module</md-icon>
+                <md-icon class="pointer" id="search_button">search</md-icon>
+            </div>
+            <div id="account_list"></div>
+        </div>
+
+        <div id="pin_prompt" hidden>
+            <md-icon class="big-icon">https</md-icon>
+            <input type="password" id="pin" maxlength="8" class="whitebox" placeholder="PIN" />
+            <p data-translation="unlock_msg"></p>
+        </div>
+        <div class="error floating_message fadeout" id="error_box">
+            <md-icon id="close_error">close</md-icon><span id="error"></span>
+        </div>
+        <span class="error" id="crit_error"></span>
+
+        <div id="bottom">
+            <a target="_blank" id="to_site" data-translation="to_site"></a>
+            <md-icon hidden class="pointer" id="lock_button">lock</md-icon>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

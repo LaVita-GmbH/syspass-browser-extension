@@ -1,0 +1,68 @@
+{
+    "wrong_pin": {
+        "message": "PIN nicht erkannt"
+    },
+    "fill_all_fields": {
+        "message": "Bitte alle Felder ausfüllen!"
+    },
+    "timeout_too_long": {
+        "message": "Timeout muss weniger als 1800 (30 Minuten) sein!"
+    },
+    "pins_not_equal": {
+        "message": "PINs stimmen nicht überein!"
+    },
+    "pin_too_short": {
+        "message": "PIN ist zu kurz!"
+    },
+    "no_login_data": {
+        "message": "Keine login-daten gefunden"
+    },
+    "copy_clipboard": {
+        "message": "Passwort in die Zwischenablage kopieren"
+    },
+    "api_error": {
+        "message": "API Zugriff fehlgeschlagen.\n\nSind die Zugangsdaten korrekt und das Recht '$PERMISSION$' erteilt?",
+        "placeholders": {
+            "permission": {
+                "content": "$1",
+                "example": "account/search"
+            }
+        }
+    },
+    "minutes": {
+        "message": "Minuten"
+    },
+    "seconds": {
+        "message": "Sekunden"
+    },
+    "opt_pin": {
+        "message": "PIN:"
+    },
+    "opt_pin_confirm": {
+        "message": "PIN wiederholen:"
+    },
+    "opt_url": {
+        "message": "URL:"
+    },
+    "opt_token": {
+        "message": "Token:"
+    },
+    "opt_password": {
+        "message": "Passwort:"
+    },
+    "opt_timeout": {
+        "message": "PIN Timeout:"
+    },
+    "saved": {
+        "message": "Gespeichert"
+    },
+    "unlock_msg": {
+        "message": "Bitte ensperren Sie Ihre Passwort-Datenbank"
+    },
+    "to_site": {
+        "message": "Zur Web-Oberfläche"
+    },
+    "search_category": {
+        "message": "nach Kategorie suchen"
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "wrong_pin": {
+        "message": "PIN not recognised"
+    },
+    "fill_all_fields": {
+        "message": "Please fill all fields!"
+    },
+    "timeout_too_long": {
+        "message": "Timeout has to be less than 1800 (30 minutes)!"
+    },
+    "pins_not_equal": {
+        "message": "PINs are not the same!"
+    },
+    "pin_too_short": {
+        "message": "PIN is too short!"
+    },
+    "no_login_data": {
+        "message": "No Login-data found"
+    },
+    "copy_clipboard": {
+        "message": "Copy Password to Clipboard"
+    },
+    "api_error": {
+        "message": "API Access failed.\n\nIs the login-data correct and the permission '$PERMISSION$' granted?",
+        "placeholders": {
+            "permission": {
+                "content": "$1",
+                "example": "account/search"
+            }
+        }
+    },
+    "minutes": {
+        "message": "minutes"
+    },
+    "seconds": {
+        "message": "seconds"
+    },
+    "opt_pin": {
+        "message": "PIN:"
+    },
+    "opt_pin_confirm": {
+        "message": "repeat PIN:"
+    },
+    "opt_url": {
+        "message": "URL:"
+    },
+    "opt_token": {
+        "message": "Token:"
+    },
+    "opt_password": {
+        "message": "Password:"
+    },
+    "opt_timeout": {
+        "message": "PIN Timeout:"
+    },
+    "saved": {
+        "message": "Saved"
+    },
+    "unlock_msg": {
+        "message": "Please unlock your Password-Database"
+    },
+    "to_site": {
+        "message": "to Web-site"
+    },
+    "search_category": {
+        "message": "search for category"
+    }
+}

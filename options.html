@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="functions.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css_material-icons.css" />
+    </head>
+    <body>
+        <div id="pin_prompt">
+            <md-icon class="big-icon">https</md-icon>
+            <input type="password" id="pin" maxlength="8" class="whitebox" placeholder="PIN" />
+        </div>
+        <div id="settings" hidden>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input type="file" class="whitebox" id="file_select" name="conf_file" />
+                    </td>
+                </tr>
+                <tr>
+                    <td data-translation="opt_url"></td>
+                    <td><input type="text" class="whitebox" id="url" /></td>
+                </tr>
+                <tr>
+                    <td data-translation="opt_token"></td>
+                    <td><input type="text" class="whitebox" id="token" /></td>
+                </tr>
+                <tr>
+                    <td data-translation="opt_password"></td>
+                    <td><input type="password" class="whitebox" id="pass" /></td>
+                </tr>
+                <tr>
+                    <td data-translation="opt_timeout"></td>
+                    <td>
+                        <input class="whitebox" id="timeout" type="number" step="30" value="300" min="30" max="1800" />
+                        <span data-translation="seconds"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span id="timeout_minutes"></span> <span data-translation="minutes"></span></td>
+                </tr>
+                <tr id="opt_pin">
+                    <td data-translation="opt_pin"></td>
+                    <td><input type="password" class="whitebox" id="new_pin" maxlength="8" /></td>
+                </tr>
+                <tr id="opt_pin_confirm">
+                    <td data-translation="opt_pin_confirm"></td>
+                    <td><input type="password" class="whitebox" id="confirm_pin" maxlength="8" /></td>
+                </tr>
+            </table>
+            <div class="whitebox button highlight" id="save"><md-icon>save</md-icon></div>
+        </div>
+        <span class="floating_message fadeout" id="success_msg">
+            <span data-translation="saved"></span><br />
+            <md-icon>done</md-icon>
+        </span>
+        <div class="error floating_message fadeout" id="error_box">
+            <md-icon id="close_error">close</md-icon><span id="error"></span>
+        </div>
+
+        <script src="options.js"></script>
+    </body>
+</html>
