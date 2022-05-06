@@ -1,6 +1,7 @@
-# Syspass Chrome Extension
-This is a Chrome Extension to access a [Syspass Password Manager](https://github.com/nuxsmin/sysPass).
+# Syspass Browser Extension
+This is a Browser Extension to access a [Syspass Password Manager](https://github.com/nuxsmin/sysPass).
 
+While it was developed for and tested on Chrome, it also works on Firefox.
 
 Current Features include:
 * Searching for Accounts

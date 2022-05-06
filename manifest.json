@@ -1,6 +1,6 @@
 {
-    "name": "Syspass",
-    "description": "This is a Chrome Extension to provide easy and secure access to a Syspass Password Manager.",
+    "name": "Syspass Extension",
+    "description": "This is a Browser Extension to provide easy and secure access to a Syspass Password Manager.",
     "version": "1.5.1",
     "default_locale": "en",
     "manifest_version": 2,
