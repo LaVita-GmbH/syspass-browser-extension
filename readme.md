@@ -16,3 +16,6 @@ We are not affiliated in any way with the original creators of Syspass.
 This Software is published and distributed under the GPLv3 License. A copy can be found in LICENSE.
 
 This Software comes without any Warranty as stated in the LICENSE.
+
+It's available to Download from the Chrome Web Store: 
+https://chrome.google.com/webstore/detail/syspass-extension/feahijnajgdohegpimfhilphmgehedji
